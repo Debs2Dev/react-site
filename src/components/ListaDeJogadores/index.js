@@ -13,7 +13,7 @@ function ListaDeJogadores() {
     const carregarJogadores = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('https://site-jrne.onrender.com/jogador');
+        const response = await axios.get('https://site-um.onrender.com/jogador');
         setJogadores(response.data);
       } catch (error) {
         exibirMensagem('Erro ao buscar jogadores: ' + (error.message || 'Erro desconhecido'), 'erro');
