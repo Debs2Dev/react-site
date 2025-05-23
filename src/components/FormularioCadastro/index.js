@@ -48,7 +48,7 @@ function FormularioCadastro() {
     }
 
     try {
-      const response = await axios.post('https://site-um.onrender.com/jogador', {
+      const response = await axios.post('https://site-dois.onrender.com/jogador', {
         nome,
         sexo,
         idade: Number(idade),
